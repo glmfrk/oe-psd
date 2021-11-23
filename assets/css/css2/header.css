@@ -1,0 +1,232 @@
+header {
+	position: absolute;
+	z-index: 4;
+	overflow: hidden;
+	width: 100%;
+	/* background: #1f1d47; */
+}
+
+.menu-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #ffffff;
+}
+.logo {
+	padding-top: 3.2rem;
+	margin-left: 5.5rem;
+}
+
+.main-menu {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	color: #ffffff;
+	position: relative;
+	z-index: 3;
+}
+.main-menu li {
+	align-self: center;
+	margin-right: 2.2rem;
+}
+.main-menu li a {
+	font-size: 1.7rem;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 61px 25px 12px 25px;
+}
+
+.main-menu li a:hover {
+	color: #ffffff;
+	background: #db341e;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #ffffff;
+	position: relative;
+	z-index: 3;
+	top: 30px;
+}
+.search-bar .search-icon-bar i {
+	font-size: 1.7rem;
+	color: #ffffff;
+}
+.search-popup {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 420px;
+	display: none;
+}
+.search-popup form {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.search-popup form input {
+	display: block;
+	width: 100%;
+	height: 5rem;
+	padding: 25px;
+	line-height: initial;
+	transition: 0.3s linear;
+	border: none;
+	outline: none;
+	border-radius: 3rem;
+	font-size: 13px;
+	color: #494848;
+	background: #ffffff;
+	border: 0.1rem solid #eeeeee;
+}
+.search-popup form button {
+	display: block;
+	position: absolute;
+	top: 51px;
+	right: 1px;
+	z-index: 4;
+	width: 100%;
+	height: 50px;
+	max-width: 100px;
+	margin: 0;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	color: #020000;
+	background: #1e1d46;
+	text-align: center;
+	transition: 0.3s linear;
+	transform: translateY(-100%);
+}
+.search-popup form button i {
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+.top-contact,
+.navbar-toggler {
+	position: relative;
+	z-index: 3;
+}
+.top-contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	top: 30px;
+}
+.top-contact a {
+	color: #ffffff;
+	font-size: 1.7rem;
+	display: inline-block;
+	margin-right: 3rem;
+}
+.top-contact a i {
+	color: #ffffff;
+	font-size: 1.7rem;
+	padding-right: 5px;
+}
+
+/* START HEADER BANNER STYLES  */
+.banner-section {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/banner/bg-1.png) no-repeat center center;
+	background-size: cover;
+	border-left: 1.5rem solid #ffffff;
+	border-bottom: 1.5rem solid #ffffff;
+}
+.banner-section::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: calc(100% - 66%);
+	background: #db3721;
+	z-index: 1;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.scroll-bar div {
+	position: absolute;
+	z-index: 5;
+	top: 35%;
+	right: -50px;
+	color: #ffffff;
+	background: #fff;
+	width: 1px;
+	height: 364px;
+}
+.scroll-bar div::before {
+	position: absolute;
+	content: "01";
+	top: -42px;
+	left: -7px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.scroll-bar div::after {
+	position: absolute;
+	content: "01";
+	bottom: -42px;
+	left: -7px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.banner .banner-content {
+	flex-basis: 100%;
+	max-width: 40%;
+	margin-top: 25rem;
+	margin-bottom: 24.9rem;
+	color: #ffffff;
+	padding-left: 2rem;
+}
+.banner .banner-content h1 {
+	font-size: 12.1rem;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.banner .banner-content p {
+	font-size: 1.7rem;
+	color: #ffffff;
+	padding-top: 4.8rem;
+	padding-bottom: 6rem;
+	text-transform: none;
+	padding-right: 3rem;
+}
+.banner .banner-content button {
+	color: #ffffff;
+	background: #db341e;
+	width: 100%;
+	max-width: 23rem;
+	height: 6.5rem;
+	display: inline-block;
+	font-size: 1.7rem;
+	line-height: 0.5;
+	text-transform: uppercase;
+}
+.banner .banner-content button.btn-01 {
+	margin-right: 1.5rem;
+}
+.banner .banner-content button:hover {
+	color: #ffffff;
+	background: #7e1603;
+}
+.banner .coffee {
+	flex-basis: 100%;
+	max-width: 60%;
+}

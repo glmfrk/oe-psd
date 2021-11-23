@@ -1,0 +1,40 @@
+/* ABOUT PART STYLES  */
+.about-section {
+	background: linear-gradient(to bottom, rgba(31, 29, 71, 0.9), rgba(31, 29, 71, 0.9)),
+		url(../../images/about/bg-1.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	border-right: 1.5rem solid #ffffff;
+	border-bottom: 1.5rem solid #ffffff;
+}
+.about-section .section-wrapper {
+	padding-bottom: 155px;
+}
+.about-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about-row .about-left-column {
+	flex-basis: 100%;
+	max-width: 59%;
+}
+.about-row .about-left-column img {
+	width: 100%;
+}
+.about-row .about-right-column {
+	flex-basis: 100%;
+	max-width: 38.215%;
+}
+.about-row .about-right-column h2 {
+	text-align: left;
+}
+.about-row .about-right-column p {
+	padding-bottom: 4rem;
+	color: #ffffff;
+	text-align: left;
+}
+.about-row .about-right-column .btn-03:hover {
+	color: #ffffff;
+	background: #7e1603;
+}
